@@ -1,28 +1,13 @@
 == README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This is my first Rails app
 
-Things you may want to cover:
+In this app we learned how to:
 
-* Ruby version
+* Use git
+* Use Rails
+* Use Ruby
+* Understand the web architecture
 
-* System dependencies
+* This Ruby class is intense
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-
-
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
