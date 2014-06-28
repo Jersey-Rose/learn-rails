@@ -1,5 +1,22 @@
 class ContactsController < ApplicationController
-	def process_form
-
+	def new
+	@contact = Contact.new
 	end
-end
+	def create
+		@contact = Contact.new(secure_params)
+		if @contact.valid?
+			# save the data
+			# send message
+			flash[:notice] = "message sent from #{@contact.name}"
+			redirect_to root_path
+		else
+			render :new
+		end
+	
+	end
+		private
+
+		def secure_params
+			params.require(:contact).permit(:name, :email, :content)
+		end
+	end
