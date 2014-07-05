@@ -4,7 +4,7 @@ class Owner
 	end
 	
 	def birthdate
-		birthdate = Date.new(1826, 27, 11) #27th day of November of the year
+		birthdate = Date.new(1826, 11, 27) #27th day of November of the year
 	end
 
 	def countdown

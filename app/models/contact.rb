@@ -17,6 +17,7 @@ class Contact < ActiveRecord::Base
 			ss = connection.create_spreadsheet('Learn-Rails-Example')
 	end
 	ws = ss.worksheets[0]
+	last_row = 1 + ws.num_rows
 	ws[last_row, 1] = Time.new
 	ws[last_row, 2] = self.name
 	ws[last_row, 3] = self.email
